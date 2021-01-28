@@ -8,7 +8,7 @@ import {NgForm} from '@angular/forms';
 })
 
 export class AppComponent {
-  user = {name: 'vasya', age: 123};
+  user = {name: 'andrew', age: 456};
 
   submit(form: NgForm): void {
     console.log(form);
