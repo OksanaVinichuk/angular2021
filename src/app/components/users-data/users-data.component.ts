@@ -7,10 +7,10 @@ import {NgForm} from '@angular/forms';
   styleUrls: ['./users-data.component.css']
 })
 export class UsersDataComponent {
-user = {name: '', username: '', age: '', email: ''};
+user = {login: '', password: ''};
 userArray = [];
 submit(form: NgForm): void {
     console.log(form);
     this.userArray.push(this.user)
-  }
+  };
 }

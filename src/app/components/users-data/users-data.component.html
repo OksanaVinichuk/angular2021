@@ -1,25 +1,2 @@
-<form #form='ngForm' (ngSubmit)="submit(form)">
-  <div *ngIf="!form.controls.name?.valid" [class]="['error']">No correct</div>
-<div>
-  <label> Your name<br>
-    <input [class.error]="!form.controls.name?.valid" [(ngModel)]="user.name" name="name" minlength="3">
-  </label>
-</div>
-  <div>
-  <label> Your surname<br>
-    <input [(ngModel)]="user.username" name="username" minlength="3" >
-  </label>
-  </div>
-  <div>
-  <label> Your age<br>
-    <input [(ngModel)]="user.age" name="age" type="number" *ngIf="user.age>0">
-  </label>
-  </div>
-  <div>
-  <label> Your email<br>
-    <input [(ngModel)]="user.email" name="email" type="email" *ngIf="user.email.includes('@')" [class]="['error']" >
-  </label>
-  </div>
-  <button [disabled]="!form.controls.name.valid"> save </button>
-</form>
+
 

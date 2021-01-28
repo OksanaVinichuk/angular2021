@@ -1,18 +1,9 @@
-<!--<form #form='ngForm' (ngSubmit)="submit(form)">-->
-<!--  <div *ngIf="!form.controls.name?.valid" [class]="['error']" >Name must be 10 symbols at least</div>-->
-<!--  <input [class.error]="!form.controls.name?.valid" [(ngModel)]="user.name" name="name" minlength="10">-->
-<!--  <input [(ngModel)]="user.age" name="age">-->
-<!--  <button [disabled]="!form.controls.name.valid"> send </button>-->
-<!--</form>-->
-
-<!--<form [formGroup]="myForm" (ngSubmit)="fff(myForm)">-->
-<!--  <label>-->
-<!--    <input [formControl]="name" minlength="3">-->
-<!--  </label>-->
-<!--  <label>-->
-<!--    <input [formControl]="age">-->
-<!--  </label>-->
-<!--  <button [disabled]="!myForm.valid">save</button>-->
-<!--</form>-->
-
-<app-users-data></app-users-data>
+<form [formGroup]="myForm" (ngSubmit)="fff(myForm)">
+  <label> Login
+    <input [formControl]="login" minlength="3">
+  </label>
+  <label> Password
+    <input [formControl]="password">
+  </label>
+  <button [disabled]="!myForm.valid">save</button>
+</form>
