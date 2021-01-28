@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'lectures';
+
+  onInputAction(el: HTMLInputElement): void {
+console.log(this.title)
+  }
 }
+
